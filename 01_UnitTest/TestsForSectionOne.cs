@@ -27,7 +27,7 @@ namespace _01_UnitTest
             SeedMenuAndTestAddItem_ShouldGetCorrectBool();
             _item = _repo.GetItemByNumber(1);
 
-            Assert.AreEqual(_item.MealNumber, 1);
+            Assert.AreEqual(_item.Price, 1.50m);
            
         }
         [TestMethod]
@@ -40,6 +40,14 @@ namespace _01_UnitTest
             bool wasAdded = _repo.AddItemToDirectory(testItem);
 
             Assert.IsTrue(wasAdded);
+        }
+        [TestMethod]
+        public void TestDelete_CountShouldEqualZero()
+        {
+            SeedMenuAndTestAddItem_ShouldGetCorrectBool();
+            bool wasDeleted = _repo.DeleteExistingItem(1);
+
+            Assert.IsTrue(wasDeleted);
         }
     }
 }
