@@ -10,6 +10,8 @@ namespace _03_Console
     {
         static void Main(string[] args)
         {
+            BadgesUI runner = new BadgesUI();
+            runner.Run();
         }
     }
 }

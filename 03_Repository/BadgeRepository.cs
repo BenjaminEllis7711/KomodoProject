@@ -9,10 +9,9 @@ namespace _03_Repository
     public class BadgeRepository
     {
         private readonly Dictionary<int, List<string>> _badgeDirectory = new Dictionary<int, List<string>>();
-
+        
         public bool AddBadge(int keyValue, List<string> doorsToAccess)
         {
-            BadgeItem badgeToAdd = new BadgeItem(keyValue, doorsToAccess);
             int startCount = _badgeDirectory.Count();
             _badgeDirectory.Add(keyValue, doorsToAccess);
             bool wasAdded = (_badgeDirectory.Count() > startCount) ? true : false;
