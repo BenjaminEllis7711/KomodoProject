@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 
-namespace _01_UnitTest
+namespace _01_UnitTests
 {
     [TestClass]
     public class TestsForSectionOne

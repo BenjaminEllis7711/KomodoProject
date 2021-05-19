@@ -18,7 +18,7 @@ namespace _01_Repository
         {
             int menuCount = _menuItemDirectory.Count();
             _menuItemDirectory.Add(newItem);
-            bool wasItemAdded = (_menuItemDirectory.Count > menuCount) ? true : false;
+            bool wasItemAdded = (_menuItemDirectory.Count() > menuCount) ? true : false;
             return wasItemAdded;
         }
 
