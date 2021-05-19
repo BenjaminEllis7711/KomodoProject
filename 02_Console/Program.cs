@@ -10,7 +10,7 @@ namespace _02_Console
     {
         static void Main(string[] args)
         {
-            Console.WindowWidth = 200;
+            Console.WindowWidth = 180;
             ClaimsUI run = new ClaimsUI();
             run.Run();
         }

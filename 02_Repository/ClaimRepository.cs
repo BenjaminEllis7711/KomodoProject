@@ -33,7 +33,7 @@ namespace _02_Repository
             int startCount = _claimDirectory.Count();
             ClaimItem trash = new ClaimItem();
             trash = _claimDirectory.Dequeue();
-            if (startCount < _claimDirectory.Count())
+            if (startCount > _claimDirectory.Count())
             {
                 return true;
             }
