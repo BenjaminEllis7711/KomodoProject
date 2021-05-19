@@ -42,7 +42,7 @@ namespace _01_UnitTests
             Assert.IsTrue(wasAdded);
         }
         [TestMethod]
-        public void TestDelete_CountShouldEqualZero()
+        public void TestDelete_ShouldGetCorrectBool()
         {
             SeedMenuAndTestAddItem_ShouldGetCorrectBool();
             bool wasDeleted = _repo.DeleteExistingItem(1);
