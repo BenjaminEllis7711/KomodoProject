@@ -67,7 +67,7 @@ namespace _01_Console
                 {
                     Console.WriteLine($"Meal number: {menuView.MealNumber}\n" +
                         $"Meal Name: {menuView.MealName}\n" +
-                        $"Description: {menuView.Description}\n");
+                        $"Description: {menuView.Description}");
                     Console.Write("Ingredients: ");
                     Console.Write(String.Join(", ", menuView.Ingredients));
                     Console.WriteLine($"\nPrice: ${menuView.Price}\n\n");
@@ -81,9 +81,9 @@ namespace _01_Console
             bool wasItemAdded = _repo.AddItemToDirectory(newItem);
             if (wasItemAdded == true)
             {
-                Console.WriteLine("Meal was successfully added to menu.");
+                Console.WriteLine("Meal was successfully added to menu.\n");
             }
-            else Console.WriteLine("Unable to add meal. Please try again.");
+            else Console.WriteLine("Unable to add meal. Please try again.\n");
         }
         public MenuItem GetMealInfo()
         {
