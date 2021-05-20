@@ -41,7 +41,6 @@ namespace _03_Console
                     case "four":
                         menuRunning = false;
                         break;
-
                 }
             }
         }
@@ -49,7 +48,8 @@ namespace _03_Console
         {
             Dictionary<int, List<string>> currentBadges = new Dictionary<int, List<string>>();
             currentBadges = _repo.DisplayAllBadges();
-            Console.WriteLine("\nKey");
+            Console.Clear();
+            Console.WriteLine("Key");
             Console.WriteLine("Badge #\t\t" + "Door Access");
             foreach (KeyValuePair<int, List<string>> badge in currentBadges)
             {
@@ -57,6 +57,7 @@ namespace _03_Console
                 Console.Write(string.Join(", ", badge.Value));
                 Console.WriteLine("");
             }
+            Console.WriteLine("Hit any key to return to the menu.");
             Console.ReadLine();
         }
         public void AddNewBadge()
@@ -112,8 +113,16 @@ namespace _03_Console
                 doorHolder = Console.ReadLine();
                 _repo.RemoveDoor(updateBadge.BadgeID, doorHolder);
                 updateBadge.AccessToDoors = _repo.GetDoorListByID(updateBadge.BadgeID);
-                Console.WriteLine("\nDoor has been removed.");
-                Console.WriteLine($"Badge #{updateBadge.BadgeID} now has access to doors {string.Join(" & ", updateBadge.AccessToDoors)}.");
+                if (updateBadge.AccessToDoors.Count == 0)
+                {
+                    Console.WriteLine("\nDoor has been removed.");
+                    Console.WriteLine($"Badge #{updateBadge.BadgeID} now has access to no doors.");
+                }
+                else
+                {
+                    Console.WriteLine("\nDoor has been removed.");
+                    Console.WriteLine($"Badge #{updateBadge.BadgeID} now has access to doors {string.Join(" & ", updateBadge.AccessToDoors)}.");
+                }
             }
             else if (inputChoice == 2)
             {
@@ -126,7 +135,6 @@ namespace _03_Console
             }
             else Console.WriteLine("Please enter a valid choice");
             Console.ReadKey();
-
         }
     }
 }

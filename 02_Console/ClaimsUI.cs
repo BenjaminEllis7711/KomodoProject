@@ -73,7 +73,6 @@ namespace _02_Console
                 content += String.Format("{0, 15}", claimItem.IsValid);
                 Console.WriteLine(content);
             }
-
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
         }
