@@ -7,7 +7,6 @@ namespace _04_UnitTests
     [TestClass]
     public class TestsForSectionFour
     {
-        private OutingItem _item = new OutingItem();
         private OutingRepository _repo = new OutingRepository();
         [TestMethod]
         public void TestTotalCost_ShouldEqualTotalFromSeed()
