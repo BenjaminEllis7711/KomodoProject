@@ -1,6 +1,6 @@
 # Gold Badge Project - Komodo - Eleven Fifty Academy
 
-## Table of contents
+## Table of Contents
 * [Introduction](#Introduction)
 * [Installation](#-Installation)
 * [Usage](#Usage)
@@ -8,7 +8,7 @@
 * [License](#License)
 * [Contact](#Contact)
 
-# Introduction
+## Introduction
 
 This is a solution demonstrating use of repository design pattern, collections, and other aspects of C#. These projects were done individually to culminate Eleven Fifty Academy's Gold Badge of the Spring 2021 Software Development cohort.  
 
