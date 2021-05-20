@@ -43,5 +43,12 @@ namespace _02_UnitTests
             test = _repo.DisplayNextClaim();
             Assert.AreEqual(test.ClaimId, 1);
         }
+        [TestMethod]
+        public void TestHandleNextClaim_ShouldGetCorrectBool()
+        {
+            _repo.SeedClaimDirectory();
+            bool wasHandled = _repo.HandleNextItem();
+            Assert.IsTrue(wasHandled);
+        }
     }
 }

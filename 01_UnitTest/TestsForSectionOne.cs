@@ -49,5 +49,17 @@ namespace _01_UnitTests
 
             Assert.IsTrue(wasDeleted);
         }
+        [TestMethod]
+        public void UpdateTest_ShouldGetCorrectBool()
+        {
+            SeedMenuAndTestAddItem_ShouldGetCorrectBool();
+            List<string> seedList = new List<string>();
+            seedList.Add("test3");
+            seedList.Add("test4");
+            MenuItem testItem2 = new MenuItem(1, "Test Meal 2", "Test Description", seedList, 2.50m);
+            bool wasUpdated = _repo.UpdateByNumber(1, testItem2);
+
+            Assert.IsTrue(wasUpdated);
+        }
     }
 }
