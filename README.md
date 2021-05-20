@@ -14,7 +14,7 @@ This is a solution demonstrating use of repository design pattern, collections, 
 
 ## Installation
 
-Use git hub to download the solution or clone directly from Git Hub.
+Use Git Hub to download the code or clone directly from Git Hub.
 
 ## Usage
 Download the solution, use Visual Studio or preferred IDE and select your choice of console assembly as the start up project. Run the program and follow the directions in console.
