@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_Console
+namespace _04_Console
 {
     class Program
     {
         static void Main(string[] args)
         {
-            MenuUI run = new MenuUI();
+            OutingUI run = new OutingUI();
             run.Run();
         }
     }

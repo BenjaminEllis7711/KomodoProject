@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _01_Console
 {
-    class UI
+    class MenuUI
     {
         private MenuRepository _repo = new MenuRepository();
         public void Run()
