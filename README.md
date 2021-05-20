@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This is a solution is a collection of console applicationa demonstrating use of repository design pattern, among other aspects of C#. There are 4 console applications, each with three assemblies; UI, repository, and unit tests. Below is a brief descripton of each application.
+This is a solution is a collection of console applications demonstrating use of repository design pattern, among other aspects of C#. There are 4 console applications, each with three assemblies; UI, repository, and unit tests. Below is a brief descripton of each application.
 
 1- Console application is for a restaurant adminstrater to view, add, update, and delete meals from the current menu. This application utilizes a list of MenuItem objects for it's repository. <br><br>
 2- Console application is for an insurance company and their claims. This application uses a queue for the repository. Using this tool, you can view all current claims, add a claim to the end of the queue, and remove the claim from the beginning of the list (when claim is 'handled'). <br><br>
