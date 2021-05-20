@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Introduction](#Introduction)
-* [Installation](#-Installation)
+* [Installation](#Installation)
 * [Usage](#Usage)
 * [Technology](#Technology)
 * [License](#License)
